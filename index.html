@@ -69,14 +69,6 @@
     camera.upperBetaLimit = Math.PI / 2.2;
     camera.attachControl(canvas, true);
     const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
-
-    const spriteManagerUFO = new BABYLON.SpriteManager("UFOManager", "https://assets.babylonjs.com/environments/ufo.png", 1, {width: 128, height: 76}, scene, 1, 1);
-    const ufo = new BABYLON.Sprite("ufo", spriteManagerUFO);
-    ufo.playAnimation(0, 16, true, 125);
-    ufo.position.y = -1;
-    ufo.position.z = 0;
-    ufo.width = 2;
-    ufo.height = 1;
     
     const spriteManagerMY = new BABYLON.SpriteManager("UFOManager", "https://psv4.userapi.com/c236331/u761291827/docs/d34/36ae5a941c0c/dlfn.png?extra=WCXx1m16meXDlTqMQ6RjaOzbIyF6DMDT_fP8J1QbcrfuJCORN6AvOmguEakoldQOALkuEnr9sNqSFcROT4yAy-niCytnZgUfG0t8NzqQevG0g6zB3JAJdiqVHifSqwNpVy6HG7fLVtCufcT1K9O5dcuWGEdl", 1, {width: 16, height: 16}, scene, 1, 1);
     const my = new BABYLON.Sprite("my", spriteManagerMY);
