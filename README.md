@@ -1,2 +1,0 @@
-# MyCoolBabylonApp
-hello world
